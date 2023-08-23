@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href ="/stylesheets/index.css">
+    <script defer src="/scripts/index.js"></script>
+    <title>Simple CRUD</title>
+</head>
+<body>
+    <main>
+        <label>Name: </label>
+        <input type="text" id="nameInput">
+        <br> <br>
+        <label> Age:  </label>
+        <input type="text" id="ageInput">
+        <br> <br>
+        <button id="addInfoBtn">Add Details</button>
+        <br> <br>
+        <div>
+            <label>Search ID: </label>
+            <input type="number" id="searchInput" min="0">
+            <button id="searchBtn">Search</button>
+        </div>
+        <br> <br>
+        <div id="deleteAll">
+            <button id="deleteAllBtn">Delete All</button>
+        </div>
+        
+        <section hidden id="updateRow">
+            <br> <br>
+            <label>New Name (if applicable):</label>
+            <input type="text" id="updateNameInput">
+            <br> <br>
+            <label>New Age (if applicable):</label>
+            <input type="text" id="updateAgeInput">
+            <br>
+            <button id="updateRowBtn">Update</button>
+            <br>
+        </section>
+        
+        <table id="table">
+            <thead>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Date Added</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </thead>
+            <tbody></tbody>
+            
+        </table>
+    </main>
+</body>
+</html>
